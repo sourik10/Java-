@@ -1,10 +1,10 @@
-public class First(){
+class First{
         int x=10;
         void show(){
             System.out.println(x);
         }
     }
-public class Second(){
+public class Second{
     public static void main(String[] args){
         First xyz=new First();
         xyz.show();
