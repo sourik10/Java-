@@ -1,4 +1,4 @@
-public class First(){
+public class First{
         int x;
         void show(){
             System.out.println(x);
