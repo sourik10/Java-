@@ -1,7 +1,3 @@
-/*
-OOPS=object orieneted programming language
----class && objects----
-*/
 class OOPS{
     //data members
     String name;
@@ -78,6 +74,64 @@ class childClass extends OOPS{
     
 }
     
+//encapsulation---a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit
+//access modifier: public,private,protected
+
+class Mobile{
+    private int price; //private access
+    
+    //public access: battery,name
+    int battery;
+    String name;
+    
+    //setter function to access private data members
+    public void setPrice(int price){
+         
+        //if private data member accesed to  admin only
+        boolean isAdmin=true;
+        if(isAdmin){
+            this.price=price;
+        }
+        else System.out.println("You are not the admin");
+        
+    }
+    
+    //getter function 
+    public int getPrice(){
+        return price; 
+    }
+    
+    void display(){
+        System.out.println("Name: "+name);
+        System.out.println("Battery: "+battery);
+        System.out.println("price: "+getPrice());
+    }
+
+}
+
+//abstraction--- Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+//<abstract> keyword 
+//child class 1: Ducati,parent: Bike
+class Ducati extends Bike{
+    @Override
+    void speedKm(){
+        System.out.println("Ducati >>>> Ktm");
+    }
+}
+
+//child class2 Ktm, parent : Bike
+class KTM extends Bike{
+    @Override
+    void speedKm(){
+        System.out.println("KTM >>>> Ducati");
+    }
+}
+
+//parent class: Bike
+abstract class Bike{
+    int price;
+    abstract void speedKm();
+}
 
 public class MyClass {
     public static void main(String args[]) {
@@ -105,6 +159,23 @@ public class MyClass {
       System.out.println("number of objects: "+OOPS.count);
       childClass abc=new childClass("Subhransu",72,100);
       abc.display();
+      
+      
+      System.out.println("\n");
+      Mobile m1=new Mobile();
+      
+      m1.setPrice(100);//setter function
+      m1.name="Apple";
+      m1.battery=2300;
+      m1.display();
+      System.out.println("\n");
+      
+      //Bike b1=new Bike();
+      //b1.speedKm();
+      Ducati d1=new Ducati();
+      d1.speedKm();
+      KTM k1=new KTM();
+      k1.speedKm();
       
       
     }
