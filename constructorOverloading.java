@@ -1,6 +1,8 @@
 class student{
+   
+   //instance variable---number,f_name,l_name
    int number;
-   String f_name;
+   String f_name;  
    String l_name;
  
  /*  
@@ -11,7 +13,8 @@ class student{
    }
  */
    student(String f,String l,int n){ //parameterised constructor
-       f_name=f;
+      //local variable----f,l,n
+       f_name=f;   
        l_name=l;
        number=n;
    }
