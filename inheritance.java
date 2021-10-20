@@ -10,7 +10,7 @@ class Mobile{
 class Apple extends Mobile{
     int weight=15;
     int price=99;
-    //method overloading
+    //method overriding
     public void getParent(){
         System.out.println("child class-apple");
     }
