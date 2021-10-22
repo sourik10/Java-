@@ -1,3 +1,4 @@
+//method-overloading
 class Method{
     int overloading(int a,int b){
         System.out.println("Integer type");
