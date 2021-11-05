@@ -8,6 +8,10 @@ class Ktm extends Bike{
 }
 public class MyClass {
     public static void main(String args[]) {
+    
+     Bike b=new Ktm();
+     b.maxSpeed();
+     
       Ktm k=new Ktm();
       k.maxSpeed();
     }
