@@ -10,9 +10,14 @@ class Child extends Parent{
     void m2(){
         System.out.println("m2-method");
     }
-    
+/*
+    void m3(){
+        System.out.println("m3-method");
+    }
+ */
+  
 }
-public class MyClass {
+ public class driver{
     public static void main(String args[]) {
         Child c=new Child();
         c.m1();
@@ -21,3 +26,11 @@ public class MyClass {
          //p.m1();
     }
 }
+
+
+/*
+day4_2.java:6: error: Child is not abstract and does not override abstract method m3() in Parent
+class Child extends Parent{
+^
+1 error
+*/
