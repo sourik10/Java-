@@ -6,17 +6,24 @@ class Outside{
             System.out.println("Outside method ");
         }
     class Inside{
+         
+    public Outside getter(){
+        return Outside.this;
+    }
         public void m2(){
             System.out.println("Inside method ");
         }
     }
+    
 }
 public class MyClass {
     public static void main(String args[]) {
-        
-     Outside o=new Outside();
-      Outside.Inside i=o.new Inside();
-      i.m2();
-      //i.m1();
+    
+    Outside out=new Outside(); //Outer class object
+    Outside.Inside in=out.new Inside(); //Inner class object
+    in.m2();
+    
+   // in.gettter.m1();
+    
     }
 }
