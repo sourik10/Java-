@@ -9,7 +9,7 @@ interface Inter2{
 interface Inter3 extends Inter1,Inter2{
     public void m3();
 }
-class Parent implements Inter1,Inter2{
+abstract class Parent implements Inter3{
     public void m1(){
         System.out.println("m1-method called");
     }
