@@ -1,23 +1,27 @@
-interface Aclass{
-   void inner();
+interface Interaf{
+   void function();
 }
-class Parent implements Aclass{
-    public void inner(){
-        System.out.println("Parent-method");
+class Parent{
+    void inner(){
+        System.out.println("Method");
     }
 }
-class Child extends Parent implements Aclass{
-    public void inner(){
-        System.out.println("Child-class");
-    }
-}
-
 public class MyClass {
     public static void main(String args[]) {
-        Child abc=new Child(){
-            super.inner();
-        }
-       // abc.inner();
+    
+        Parent p=new Parent(){
+            void inner(){
+                System.out.println("implemented-anonymous");
+            }
+        };
+        p.inner();
         
+        Interaf intf=new Interaf(){
+            public void function(){
+                System.out.println("Interface object");
+            }
+        };
+        
+        intf.function();
     }
 }
