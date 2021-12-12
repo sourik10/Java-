@@ -1,3 +1,5 @@
+//javac -d . filename.java
+
 //package pkgTwo;
 interface One{
     public void m1();
