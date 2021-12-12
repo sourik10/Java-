@@ -1,18 +1,33 @@
-public class MyClass {
+class Parent{
      
     // Orderof execution --> Static > Non static >Constructor
-    static{
-        System.out.println("Static Block");
-    }
     //Non-static Block 
     {
-        System.out.println("Ordinary Block");
+        System.out.println("Parent-1  Block");
+    }
+    {
+        System.out.println("Parent-2 Block");
     }
   
-    MyClass(){
-        System.out.println("MyClass Constrcutor");
+    Parent(){
+        System.out.println("Parent Constrcutor");
     }
-    public static void main(String args[]) {
-     MyClass o=new MyClass();
+}
+class Child extends Parent{
+    {
+        System.out.println("Child-1  Block");
+    }
+    {
+        System.out.println("Child-2 Block");
+    }
+  
+    Child(){
+        System.out.println("Child Constrcutor");
+    }
+}
+public class Driver{
+public static void main(String args[]) {
+    
+     Child obj=new Child();
     }
 }
