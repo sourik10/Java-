@@ -1,23 +1,29 @@
-//error
-package pOne;
-class P{
-    int x=10;
-    public void pm(){
-        System.out.println("Parent class method");
-    }
+//package pOne;
+class Parent{
+	int x=10;
+	void m1(){
+	System.out.println("Parent method called");
+	}
 }
 
-package pTwo;
-import pOne.*; 
-public class C extends P{
-    int y=20;
-    public void cm(){
-        super.pm();
-        System.out.println("Child class method");
-    }
-    //System.out.println(super.x);
-     public static void main(String args[]) {
-     C abc=new C();
-     abc.cm();
-    }
+//import pOne.Parent;
+//package pTwo;
+class Child extends Parent{
+	int y=20;
+	void m2(){
+	System.out.println("Child method called");
+	}
 }
+
+public class Driver{
+	public static void main(String[] args){
+	Child abc=new Child();
+	abc.m2();
+	System.out.println(abc.y);
+	
+	//parent
+	abc.m1();
+	System.out.println(abc.x);
+	}
+}
+
