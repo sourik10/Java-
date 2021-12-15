@@ -1,3 +1,4 @@
+//error
 import java.util.*;
 
 public class MyClass {
