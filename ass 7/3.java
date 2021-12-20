@@ -7,7 +7,10 @@ public class MyClass {
       String s=sc.nextLine(); //takeInput String
      
     // String[] f=s.split(" ");
-     System.out.println(s.replace(" ","").length());
+     //System.out.println(s.replace(" ","").length());
+    System.out.println(s.length());
+    String a=s.trim();
+    System.out.println(a.length());
       
     }
 }
