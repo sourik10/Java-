@@ -1,25 +1,25 @@
 import java.util.Scanner;
-
 public class MyClass {
     public static void main(String args[]) {
      Scanner sc=new Scanner(System.in);
-     
      String s=sc.nextLine();
      char[] ch=s.toCharArray();
-     System.out.println("Before sorting: "+ch);
      
-     //selectionSort algorithm
-     for(int i=0;i<ch.length-1;i++){
-         int minIndex=i;
-         for(int j=i+1;j<ch.length;j++){
-             if(ch[minIndex]>ch[j]){
-                 minIndex=j;
-         }
-     }
-     char t=ch[i];
-     ch[i]=ch[minIndex];
-     ch[minIndex]=t;
-    }
-     System.out.println("After sorting: "+ch);
+     System.out.println("Before sorting: "+new String(ch));
+       char temp;
+        int i = 0;
+        while (i < ch.length) {
+            int j = i + 1;
+            while (j < ch.length) {
+                if (ch[j] < ch[i]) {
+                    temp = ch[i];
+                    ch[i] = ch[j];
+                    ch[j] = temp;
+                }
+                j += 1;
+            }
+            i += 1;
+        }
+        System.out.println("After sorting: " + new String(ch));
     }
 }
