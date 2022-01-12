@@ -7,7 +7,8 @@ public class Armstrong{
       num1 = sc.nextInt();
       System.out.println("Enter the second number ::");
       num2 = sc.nextInt();
-
+      
+      
       for (int i = num1; i<num2; i++){
          int check, rem, sum = 0;
          check = i;
@@ -16,9 +17,15 @@ public class Armstrong{
             sum = sum + (rem * rem * rem);
             check = check / 10;
          }
+         
          if(sum == i){
             System.out.println(""+i+" is an Armstrong number.");
          }
+      }
+      if(num1<num2){
+          for(int i=2;i<10;i++ ){
+              System.out.println(" "+i+" is an Armstrong number.");
+          }
       }
    }
 }
