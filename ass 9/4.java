@@ -1,17 +1,19 @@
-class driver{
-  void m1(){ 
-    System.out.println("i am king");
-  }
+import java.util.Scanner;
+class method{
+    void m1(){
+        System.out.println("m1 created under method class ");
+    }
+}
+public class MyClass {
+    public static void main(String args[]) {
+      method abc=null;
+     try{
+        abc.m1();
+     }
+     catch(NullPointerException e){
+        System.out.println(e);
+     }
+    }
 }
 
-public class test{
-  public static void main(String[] args){
-   driver d=null;
-   try{ 
-    d.m1();
-   }
-  catch(NullPointerException npe){
-   System.out.println("refernce variable is not instantiated");
-  }
- }
-}
+//java.lang.NullPointerException: Cannot invoke "method.m1()" because "<local1>" is null
