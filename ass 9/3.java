@@ -1,17 +1,19 @@
-import java.util.*;
-class Test{
-    public static void main(String [] args){
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
         Scanner sc=new Scanner(System.in);
-        int arr[];
-        System.out.print("Enter the array size: ");
+       // int ar[];
+        System.out.println("enter array size: ");
         int n=sc.nextInt();
         
-        try{
-            arr = new int[n];
-            System.out.println("It's Alright!");
-        }
-        catch(NegativeArraySizeException nase){
-            System.out.println("Array Size can't be -ve");
-        }
+     try{
+         //risky code
+        int ar[]=new int[n];
+        System.out.println("array size of "+n+" is created ");
+     }
+     catch(NegativeArraySizeException e){  //exception handling code
+         System.out.println(e);
+     }
+    
     }
 }
