@@ -4,7 +4,7 @@ public class test{
    throw new Throwable();
   }
   catch(Throwable t){
-   System.out.println("using throw");
+   System.out.println(t);
    }
   }
 }
