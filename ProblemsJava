@@ -1,0 +1,133 @@
+Topic - Bit Manipulation
+01. Find first set bit
+02. Rightmost different bit
+03. Check whether K-th bit is set or not
+04. Count total set bits
+05. Bit Difference
+06. Number is sparse or not
+07. Longest Consecutive 1's
+08. Binary To Gray Code equivalent
+09. Gray to Binary equivalent
+10. Power of 2
+11. Swap all odd and even bits
+12. Maximum AND Value
+
+Topic - Mathematics
+01. Absolute Value
+02. Convert Celsius To Fahrenheit
+03. Quadratic Equation Roots
+04. Factorial Of Number
+05. Digits In Factorial
+06. GP Term
+07. Primality Test
+08. Exactly 3 Divisors
+09. Addition Under Modulo
+10. Multiplication Under Modulo
+11. Modular Multiplicative Inverse
+
+Topic - Recursion
+01. Print 1 To N Without Loop
+02. Sum of Digits of a Number
+03. Count Total Digits in a Number
+04. Digital Root
+05. Fibonacci Using Recursion
+06. Tower Of Hanoi
+07. Josephus problem
+08. Lucky Numbers
+09. Power Using Recursion
+10. Power Of Numbers
+11. Power Set Using Recursion
+12. Possible Words From Phone Digits
+
+
+Topic - Arrays 
+01. Array insert at end
+02. Array insert at index
+03. Mean And Median of Array
+04. Who has the majority?
+05. Max and Second Max
+06. Strongest Neighbour
+07. Reverse array in groups
+08. Rotate Array
+09. Minimum adjacent difference in a circular array
+10. Maximum occured integer
+11. Wave Array
+12. Frequencies of Limited Range Array Elements
+13. Equilibrium Point
+14. Leaders in an array
+15. Smallest Positive missing number
+16. Rearrange Array Alternately
+17. Rearrange an array with O(1) extra space
+18. Maximum Index
+19. Trapping Rain Water
+20. Stock buy and sell
+21. Check if array is sorted and rotated
+22. Kadane's Algorithm
+23. Longest Subarray Of Evens And Odds
+24. Max Circular Subarray Sum
+
+
+Topic - Searching 
+01. Search an Element in an array
+02. Searching an element in a sorted array
+03. Count 1's in binary array
+04. Square root of a number
+05. Majority Element
+06. Left Index
+07. Peak element
+08. Floor in a Sorted Array
+09. Minimum Number in a sorted rotated array
+10. Two Repeated Elements
+11. Roof Top
+12. Maximum Water Between Two Buildings
+13. Smallest Positive missing number
+14. Count only Repeated
+15. Count More than n-k Occurences
+16. Allocate minimum number of pages
+17. Subarray with given sum
+18. Median of Two sorted arrays
+
+
+Topic - Sorting 
+01. Bubble Sort
+02. Insertion Sort
+03. Quick Sort
+04. Binary Array Sorting
+05. Count Inversions
+06. Union of Two Sorted Arrays
+07. Intersection of two sorted arrays
+08. Count the number of possible triangles
+09. Find triplets with zero sum
+10. Three way partitioning
+11. Counting Sort
+12. Closet 0s 1s and 2s
+13. Sort by Absolute Difference
+14. Triplet Sum in Array
+15. Minimum Difference in an Array
+16. Kth smallest element
+17. Number of pairs
+18. Merge Without Extra Space
+19. Merge three sorted arrays
+20. Closer to sort
+21. Minimum Platforms
+
+
+Topic - Matrix
+01. Adding two matrices
+02. Sum of upper and lower triangles
+03. Multiply the matrices
+04. Print Matrix in snake Pattern
+05. Transpose of Matrix
+06. Rotate by 90 degree
+07. Determinant of a Matrix
+08. Boundary traversal of matrix
+09. Exchange matrix columns
+10. Spirally traversing a matrix
+11. Reversing the columns of a Matrix
+12. Interchanging the rows of a Matrix
+13. Search in a row-column sorted Matrix
+14. Boolean Matrix
+15. Make Matrix Beautiful
+
+
+
