@@ -6,8 +6,10 @@
 //this,super keyword
 //order of execution(static , nonstatic , constructor)
 //collection framework (list/stack/map)
-//polymorphism
+//runtime polymorphism
 //https://www.javatpoint.com/runtime-polymorphism-in-java
+//instanceof operator
+//downcasting 
 
 class Bike{
     Bike(){
@@ -127,6 +129,22 @@ class HelloWorld {
        System.out.println(" ");
       Teacher t1=new Stud(); //upcasting
       t1.study();
+      
+      Stud s007=new Stud();
+      System.out.println(s007 instanceof Stud);
+      System.out.println(s007 instanceof Teacher);
+      
+      //Stud s11=new Teacher();//downcasting
+     // Stud s11=(Stud)new Teacher();//downcasting with typeconversion
+      //java.lang.ClassCastException
+      System.out.println(s11 instanceof Teacher);
+      
+      Stud s10=null;
+      System.out.println(s10 instanceof Stud);
+      System.out.println(s10 instanceof Teacher);
+      
+      
+      
        
        
        
@@ -228,6 +246,8 @@ class CollectionFramework {
         System.out.println(mp.keySet());
         System.out.println(mp.values());
         System.out.println(mp.entrySet());
+        
+        
         
     }
 }
