@@ -13,7 +13,9 @@
 //Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
 //inheritance of interfaces
 //https://www.javatpoint.com/difference-between-abstract-class-and-interface
-
+//https://www.javatpoint.com/access-modifiers
+//encapsulation 
+//https://www.javatpoint.com/encapsulation
 
 class Bike{
     Bike(){
@@ -211,7 +213,26 @@ class HelloWorld {
         
     }
 }
-
+/*
+//encapsulation
+class Student{  
+    
+    private String name;  
+    public String getName(){  
+        return name;  
+    }  
+    public void setName(String name){  
+    this.name=name ;
+    }      
+}
+class Driver{
+    public static void main(String[] args){
+        Student s1=new Student();
+        s1.setName("Pablu"); //accessing private data members using settter method
+        System.out.println(s1.getName()); //getting private data members using getter method
+    }
+}
+*/
 
 /*
 //Collections
