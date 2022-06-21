@@ -8,8 +8,12 @@
 //collection framework (list/stack/map)
 //runtime polymorphism
 //https://www.javatpoint.com/runtime-polymorphism-in-java
-//instanceof operator
-//downcasting 
+//instanceof operator, downcasting
+//abstraction (Abstract class & interface)
+//Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+//inheritance of interfaces
+//https://www.javatpoint.com/difference-between-abstract-class-and-interface
+
 
 class Bike{
     Bike(){
@@ -106,6 +110,45 @@ class Stud extends Teacher{
     }
 }
 
+abstract class Animal{ //superclass
+    abstract void running();
+}
+class Dog extends Animal{ //dog subclass
+    void running(){
+        System.out.println("Dog is running");
+    }
+}
+
+abstract class Polygon{
+    abstract void drawing();
+}
+class Square extends Polygon{
+    void drawing(){
+        System.out.println("Square");
+    }
+}
+class Rectangle extends Polygon{
+    void drawing(){
+        System.out.println("rectangle");
+    }
+}
+
+//interface to achieve abstraction
+interface Print{
+    void printing();
+}
+//inheritance of interfaces
+interface Game extends Print{ 
+    void gaming();
+}
+class Computer implements Print,Game{
+    public void printing(){
+        System.out.println("A4 PAGE");
+    }
+    public void gaming(){
+        System.out.println("FIFA");
+    }
+}
 class HelloWorld {
     public static void main(String[] args) {
         Honda h1=new Honda();
@@ -137,16 +180,32 @@ class HelloWorld {
       //Stud s11=new Teacher();//downcasting
      // Stud s11=(Stud)new Teacher();//downcasting with typeconversion
       //java.lang.ClassCastException
-      System.out.println(s11 instanceof Teacher);
+      //System.out.println(s11 instanceof Teacher);
       
       Stud s10=null;
-      System.out.println(s10 instanceof Stud);
-      System.out.println(s10 instanceof Teacher);
+     // System.out.println(s10 instanceof Stud);
+      //System.out.println(s10 instanceof Teacher);
+      
+      Animal abc=new Dog(); //upcasting
+      abc.running();
       
       
-      
-       
-       
+      //abstraction using absrract class
+     // Animal def=new Animal();
+      //def.running();
+     //error: Animal is abstract; cannot be instantiated
+     
+     Polygon poly=new Square();
+     poly.drawing();
+     Polygon polly=new Rectangle();
+     polly.drawing();
+     
+     //interface
+     Computer cc=new Computer();
+     cc.printing();
+     cc.gaming();
+     
+     
        
         
         
