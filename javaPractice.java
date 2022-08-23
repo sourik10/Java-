@@ -111,9 +111,81 @@ public class MyClass {
         
         
         
+      
+ //exception handling type1
+       
+public class MyClass {
+    public static void main(String args[]) {
         
-       
-       
-       
+      String[] fb=new String[3]; //an array named "fb" of string datatype of size 3
+      fb[0]="souvik";
+      fb[1]="apurba";
+      fb[2]="titli";
+      
+      //exception handling 
+      try{
+          System.out.println(fb[3]); //array index out of bound
+      }
+      catch(Exception e){
+          System.out.println(e);
+      }
+      
     }
 }
+        
+  //exception handling type2
+        public class MyClass {
+    public static void main(String args[]) {
+        
+     int a=10;
+     int b=0;
+      
+      //exception handling 
+      try{
+          System.out.println(a/b);  //java.lang.ArithmeticException: / by zero
+      }
+      catch(Exception e){
+          System.out.println(e);
+      }
+      
+    }
+}
+        
+//function
+import java.util.Scanner;
+class MyClass {
+    
+    //function defination
+    public static int addNumbers(int first,int second,int third){
+       int t=first+second+third;
+        return t;
+        //return first+second+third;
+    }
+
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int xx=sc.nextInt();
+        int c=addNumbers(a,b,xx); //function calling
+        System.out.println(c);
+        
+        //System.out.println(addNumbers(a,b,x));
+        
+        //int x=99;
+        //int y=99;
+        //System.out.println(x+y);
+        
+      
+    }
+}
+        
+        
+        
+     
+        
+        
+        
+        
+        
+
