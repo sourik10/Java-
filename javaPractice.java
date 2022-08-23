@@ -48,6 +48,21 @@ class HelloWorld {
        }
        
        
+           */
+       
+    //implicit 
+    float price = 100.00F;
+    int gst = 18;
+    float finalPrice = price + gst;
+    System.out.println(finalPrice+" ");
+    
+    //explicit
+    int pricee = 100; 
+    float gstt = 18.00F; 
+    int finalPricee = pricee + (int)gstt; 
+    System.out.println(finalPricee);
+    
+    
        
        
        
