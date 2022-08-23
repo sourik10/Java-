@@ -73,6 +73,41 @@ class HelloWorld {
       System.out.println(a);
     }
 }
+ 
+        
+ // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.lang.Math;
+import java.util.Scanner; //taking user from input
+class HelloWorld {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter value for a: ");
+     int a=sc.nextInt();
+     System.out.println("enter value for b: ");
+     int b=sc.nextInt();
+     System.out.println(Math.max(a,b)+" "); //maxFunction
+     System.out.println(Math.min(a,b)+" "); //minFunction
+    // System.out.println((int)Math.sqrt(100)); //sqrt
+     
+    }
+}
+   
+        
+ //break + continue
+public class MyClass {
+    public static void main(String args[]) {
+        
+      for(int i=0;i<10;i++){
+         if(i==5) continue;
+          // if(i==5) break;
+         System.out.println(i+" ");
+    }
+    }
+}      
+        
+        
+        
         
         
         
