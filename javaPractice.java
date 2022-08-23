@@ -2,7 +2,7 @@
 class HelloWorld {
     public static void main(String[] args) {
         
-        /*
+      
       //integer,flaot,double
        int a=36;
        a=a>>2;
@@ -11,10 +11,9 @@ class HelloWorld {
        System.out.println(f+" ");
        double d=76;
        System.out.println(d);
-       */
        
        
-       /*
+    
        //string datatype
                     
        String s1="rronaldor genjiir size ";  // 0-6
@@ -35,7 +34,7 @@ class HelloWorld {
        //endIndex excluded
        System.out.println(s1.substring(1,8));
        
-       */
+  
        
        
        //array in java
@@ -63,6 +62,21 @@ class HelloWorld {
     System.out.println(finalPricee);
     
     
+        
+ //input taking from user
+ import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int a=sc.nextInt();
+      a+=10;
+      System.out.println(a);
+    }
+}
+        
+        
+        
+        
        
        
        
