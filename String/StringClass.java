@@ -51,6 +51,25 @@ class Main {
 		System.out.println(c2.compareTo(c1));
 
 
+	// char[] ch = {'m','e','s','s','i'};
+        // String str = new String(ch);
+        // System.out.println(str);
+        
+        // String str2 = "ronaldo";
+        // System.out.println(str2);
+        // String s2="MESSI";
+        
+        // char chAt = str2.charAt(2);
+        // System.out.println(chAt);
+        // System.out.println(str.length());
+        // System.out.println(str.substring(2,4));
+        
+        // System.out.println(str.indexOf('s')); //indexof
+        // System.out.println(str.equals(str2)); //equals method 
+        // System.out.println(str.equalsIgnoreCase(s2));
+        
+        // System.out.println(str.concat(str2));
+        
 
 	}
 }
