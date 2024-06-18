@@ -96,4 +96,45 @@ public class Main{
 
 //Create a class, make method inside it and pass object as parameter of this method. (a. pass same class’s object, b) pass different class’s object)
 
+//a. pass same class’s object
+class SameClassObject{
+    int y=10;
+    void method(SameClassObject s1){
+        System.out.println("Same class object: "+s1.y);
+    }
+}
+public class Main{
+    public static void main(String args[]){
+    SameClassObject s1 = new SameClassObject();
+    s1.method(s1);
+}
+}
+
+//b.pass different class's object
+class DiffClassObject{
+    int x=50;
+}
+
+class SameClassObject{
+    int y=10;
+    void method(SameClassObject s1){
+        System.out.println("Same class object: "+s1.y);
+    }
+
+    void method_differentclass(SameClassObject s1 , DiffClassObject d1){
+      System.out.println("Same class object: "+s1.y);
+      System.out.println("Same class object: "+d1.x);
+    }
+}
+public class Main{
+    public static void main(String args[]){
+    SameClassObject s1 = new SameClassObject();
+    DiffClassObject d1 = new DiffClassObject();
+    s1.method(s1);
+    s1.method_differentclass(s1,d1);
+}
+}
+
+//Create a class; put a method inside this class which will return a class reference return same class and/or different class object.
+
 
