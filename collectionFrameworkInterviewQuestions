@@ -1,0 +1,27 @@
+
+What is Collection ? Java Collection means a single unit of objects.
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+
+Collection Framework = Collection of Interfaces(Set, List, Queue, Deque) and Classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+Hierarchy of Collection framework:
+https://www.javatpoint.com/collections-in-java
+
+What is Interface ? An interface in Java is a blueprint of a class. 
+  1.It is used to achieve abstraction.
+  2.By interface, we can support the functionality of multiple inheritance.
+  3.It can be used to achieve loose coupling.
+
+What is Class ?
+A class is a user-defined data type. It is a blueprint or template which is used for creating objects. Each object has some properties and methods. 
+A class encapsulates the data and behavior of an object into a single entity. This property makes a class easy to use and maintain.
+
+Difference between Interface and Class ?
+https://www.naukri.com/code360/library/difference-between-class-and-interface
+
+
+
+
+
+
+
+
